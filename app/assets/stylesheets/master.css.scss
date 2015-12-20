@@ -3,6 +3,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+body {
+  background: url('/assets/subtle_white_feathers.png');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -13,4 +18,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+}
+
+.navbar.navbar-inverse {
+  background: url('/assets/pw_maze_black.png');
+  border-radius: 0;
+  box-shadow: 1px 5px 8px #747474;
 }
