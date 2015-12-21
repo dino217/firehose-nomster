@@ -29,6 +29,8 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'will_paginate-bootstrap'
 gem 'simple_form'
 gem 'devise', '>= 3.2.4'
+gem 'geocoder'
+gem 'figaro', '>= 1.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
