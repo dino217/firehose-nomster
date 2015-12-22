@@ -6,8 +6,8 @@
 
   <% if @place.photos.present? %>
     <% @place.photos.each do |photo| %>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <%= image_tag photo.picture %>
+      <div class="col-xs-12 col-sm-6 col-md-2 food-image">
+        <%= image_tag photo.picture, :class => "img-responsive center-block" %>
         <p><%= photo.caption %><p>
       </div>
     <% end %>
@@ -102,11 +102,11 @@
   <h1 class="pull-left">Comments</h1>
   <!-- Button trigger modal -->
 
-  <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myPhotoModal">
+  <button class="btn btn-primary btn-lg pull-right modal-button" data-toggle="modal" data-target="#myPhotoModal">
     Add a photo
   </button>
 
-  <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">
+  <button class="btn btn-primary btn-lg pull-right modal-button" data-toggle="modal" data-target="#myModal">
     Add a comment
   </button>
 </div>
