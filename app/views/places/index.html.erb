@@ -5,7 +5,14 @@
     <p><%= place.description %></p><br />
 
     <% if place.user.present? %>
-      <small><%= place.user.email %></small>
+      <small><%= place.user.email %></small><br.>
+    <% end %>
+
+    <% if place.photos.present? %>
+      <div class="col-xs-12 col-sm-6 col-md-2 food-image">
+        <%= image_tag place.photos.last.picture, :class => "img-responsive center-block" %>
+        
+      </div>
     <% end %>
 
     <% if place.comments.present? %>
