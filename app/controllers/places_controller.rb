@@ -10,8 +10,8 @@ class PlacesController < ApplicationController
   end
 
   def create
-    @place = current_user.places.create(place_params)
-    if @place.valid?
+    @place = current_user.places.build(place_params)
+    if @place.save
       redirect_to root_path
     else
       render :new, :status => :unprocessable_entity
